@@ -10,10 +10,24 @@
 
 // finally, try modifying the values you've stored every frame to make the shapes change their positions somehow.
 
+float[] x = new float[100];
+float[] y = new float[100];
+
 void setup() {
-  
+  size(600, 600);
 }
 
 void draw() {
+  background(0);
+  for(int i=0; i<100; i++) {
+    x[i] = i*10+50;
+    y[i] = i*15;
+    colorMode(HSB, 100);
+    float c = map(i, 0, 100, 0, 100);
+    fill(c, 50, 100);
+    ellipse(x[i], y[i], 10, 10);
+  }
   
+  x[3] = mouseX;
+    ellipse(x[3], y[3], 10, 10);
 }
