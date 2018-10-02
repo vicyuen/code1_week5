@@ -1,4 +1,3 @@
-
 // Code 1 FA_18
 // Bryan Ma
 // map() function
@@ -17,11 +16,11 @@ void setup() {
 void draw() {
   background(200);
   fill(255);
-  ellipse(width/2, 400, 200, 200);
+  ellipse(width/2, height/2, 200, 200);
   
   
   float xPos = map(mouseX, 0, width, width/2 - 50, width/2 + 50);
-  float yPos = mouseY;
+  float yPos = map(mouseY, 0, height, height/2 - 50, height/2 + 50);
   fill(100);
   ellipse(xPos, yPos, 50, 50);
 }
