@@ -16,10 +16,10 @@ void setup() {
 void draw() {
   background(255);
   
-  for (int i = 0; i <= 10; i++) {
+  for (int i = 0; i <= 20; i++) {
     
-    float xPos = map(i, 0, 10, 0, width);
-    float yPos = height/2;
+    float xPos = map(i, 0, 20, 0, width);
+    float yPos = map(i, 0, 20, 0, height);
 
     rect(xPos, yPos, 20, 100);    
   }
