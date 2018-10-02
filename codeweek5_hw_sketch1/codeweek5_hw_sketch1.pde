@@ -15,6 +15,9 @@ void setup() {
 }
 
 void draw() {
-  float bgcolor = map(mouseX, 0, width, 0, 255);
-  background(bgcolor);
+  int r = int(map(mouseX, 0, width, 0, 255));
+  int g = int(map(mouseY, 0, height, 0, 255));
+  int b = 100;
+  //float bgcolor = map(mouseX, 0, width, 0, 255);
+  background(r, g, b);
 }
