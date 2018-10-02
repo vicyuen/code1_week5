@@ -7,23 +7,31 @@
 // then loop through the array to draw the ellipses, instead of drawing them one by one.
 
 
-float x1 = 100;
-float x2 = 200;
-float x3 = 300; 
-float x4 = 400;
-float x5 = 500;
+//float x1 = 100;
+//float x2 = 200;
+//float x3 = 300; 
+//float x4 = 400;
+//float x5 = 500;
 
+float[] x = {100, 200, 300, 400, 500};
 
 void setup() {
   size(600, 600);
   noStroke();
+  
 }
 
 void draw() {
   background(150);
-  ellipse(x1, height/2, 70, 70);
-  ellipse(x2, height/2, 70, 70);
-  ellipse(x3, height/2, 70, 70);
-  ellipse(x4, height/2, 70, 70);
-  ellipse(x5, height/2, 70, 70);
+  
+  for(int i=0; i<5; i++) {
+    ellipse(x[i], height/2, 70, 70);
+  }
 }
+  
+  
+  //ellipse(x1, height/2, 70, 70);
+  //ellipse(x2, height/2, 70, 70);
+  //ellipse(x3, height/2, 70, 70);
+  //ellipse(x4, height/2, 70, 70);
+  //ellipse(x5, height/2, 70, 70);
