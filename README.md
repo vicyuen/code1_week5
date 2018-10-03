@@ -1,1 +1,1 @@
-this is sketch 1 repo for week 5 code homework
+this is sketch 1-5 repos for week 5 code homework
